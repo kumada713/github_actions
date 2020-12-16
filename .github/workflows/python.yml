@@ -22,7 +22,7 @@ jobs:
           pip install pipenv
       - name: Install dependencies
         run: |
-          pipenv sync --dev
-      - name: Test with unittest
+          pipenv install --dev --system --ignore-pipfile --deploy
+      - name: Test with pytest
         run: |
           pipenv run test
