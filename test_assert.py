@@ -1,7 +1,5 @@
 import pytest
 
-# test
-
 
 @pytest.fixture
 def smtp_connection():

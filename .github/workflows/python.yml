@@ -1,7 +1,12 @@
 name: Python application PR
 
 on:
+  push:
+    branches:
+      - main
+      - "feature/**"
   pull_request:
+    types: [opened, synchronize]
     branches: [main]
 
 jobs:
